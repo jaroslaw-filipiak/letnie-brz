@@ -6,8 +6,12 @@ footer {
     .footer {
         height: 100%;
         display: flex;
-        align-items: stretch;
+        align-items: center;
         justify-content: space-between;
+
+        @include lg-min {
+            align-items: stretch;
+        }
 
         &-left {
             display: flex;
