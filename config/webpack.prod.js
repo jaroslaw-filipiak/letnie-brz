@@ -110,7 +110,7 @@ module.exports = merge(baseConfig, {
 
     // Visualization of the size of js files
     new BundleAnalyzerPlugin({
-      openAnalyzer: true
+      openAnalyzer: false
     }),
   ]
 });
