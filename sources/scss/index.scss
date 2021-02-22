@@ -1,11 +1,21 @@
-@font-face {
-  font-family: 'Kodchasan';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url("../fonts/Kodchasan.woff2") format('woff2');
+
+
+html , body {
+  font-family: 'Big Shoulders Display', cursive;
+  background: no-repeat center/cover url("../images/bgmain.jpg") ;
 }
 
-body {
 
+
+.wrap-content {
+	margin: 0 auto;
+	padding: 0px 20px;
+
+	@include xl-min {
+	width: 1200px;
+	}
+
+	@include xxl-min {
+		width: 1440px;
+	}
 }

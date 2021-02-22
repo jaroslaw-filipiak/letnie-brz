@@ -1,0 +1,45 @@
+//define vars and mix-ins
+$context-font: ( header: 1, section: 1, article: 0.67, footer: 0.5, aside: 0.33 ); // Make fonts change size dependent upon what context they are in
+$step-size-font: 0.4; //step size for incremental font sizes
+$amplifier-font-mobile: 2; //convenience var to in/decrease the values of header values in one place
+$amplifier-font-desktop: 2.2; //convenience var to in/decrease the values of header values in one place
+$on-laptop: 800px;
+$margin-heading: 0.67em 0;
+@mixin media-query($device) {
+    //scss mobile-first media query
+    @media screen and (min-width: $device) {
+         @content;
+    }
+}
+//function to generate the actual header size
+@mixin heading-size($size) {
+    $context-size-computed: $size * $step-size-font;
+    font-size: $context-size-computed * $amplifier-font-mobile + em;
+    @include media-query($on-laptop) {
+        font-size: $context-size-computed * $amplifier-font-desktop + em;
+    }
+}
+// Apply the stylings using the vars and mix-ins
+// context-free header styling
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-weight: bold;
+        margin: $margin-heading;
+    }
+}
+//iterate thru all the contexts in context-font, setting the header sizes in each
+@each $element, $value in $context-font {
+    #{$element} {
+        //set header sizes 1-6
+        @for $i from 1 through 6 {
+            h#{$i} {
+                $bigger-size-proportional-to-smaller-number: (6-$i);
+                @include heading-size($bigger-size-proportional-to-smaller-number * $value);
+            }
+        }
+    }
+}
+
+p {
+    font-size: 22px;
+}

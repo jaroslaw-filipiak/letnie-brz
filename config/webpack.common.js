@@ -75,6 +75,22 @@ module.exports = {
           filename: 'images/static/[name].[hash][ext]',
         },
       },
+      {
+        test: /\.jpg/,
+        type: 'asset/resource',
+        generator: {
+          // adding a hash to the file
+          filename: 'images/static/[name].[hash][ext]',
+        },
+      },
+      {
+        test: /\.png/,
+        type: 'asset/resource',
+        generator: {
+          // adding a hash to the file
+          filename: 'images/static/[name].[hash][ext]',
+        },
+      },
 
       // OR -------------------------
 
