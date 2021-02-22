@@ -134,10 +134,16 @@ footer {
         }
     }
 
-    .patrons-area {
+    .patrons-area , .main-patron-area {
        
         h4 {
             margin-bottom: 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+            @include xxl-min {
+                font-size: 19px;
+            }
         }
     }
 }

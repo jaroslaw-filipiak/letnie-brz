@@ -10,18 +10,39 @@
         min-height: $hero-main-height-desktop;
         margin-top: -70px;
         align-items: self-end;
-        }
+    }
+
+    @include xxl-min {
+        margin-top: -100px;
+    }
 
     img {
-        transform: scale(3);
-        position: relative;
-        left: 75vw;
+        @include xs {
+            transform: scale(3);
+            position: relative;
+            left: 75vw;
+        }
+        @include sm {
+            transform: scale(2.5);
+            position: relative;
+            left: 65vw;
+        }
 
+        @include md {
+            transform: scale(2);
+            position: relative;
+            left: 32vw;
+        }
+        
         @include lg-min {
             position: relative;  
             top: 10vh;
             transform: scale(1);
             left: 0vw;
+        }
+
+        @include xxl-min { 
+            transform: scale(1.1);  
         }
     }
 }
