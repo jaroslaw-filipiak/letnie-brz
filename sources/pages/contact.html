@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="index" lang="pl" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="description - index" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Letnie brzemienia</title>
+    <link rel="manifest" href="./assets/manifest.json" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
 </head>
+
 <body>
-    <h1>contact html</h1>
+    <div class="main-wrapper">
+        <nav>
+            <div class="nav-left">
+                <img class="logo" src="./../images/letnie-brzmienia-logotyp.svg" alt="letnie brzemienia logotyp">
+            </div>
+            <div class="nav-right">
+                <ul id="main-menu">
+                    <li><a href="#">O cyklu</a></li>
+                    <li><a href="#">Artyści</a></li>
+                    <li><a href="#">Festiwal</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="hamburger--spin">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-main">
+           <img class="img-fluid" src="./../images/slider-main.png" alt="letnie brzemienia w twoim mieście , zdjecie wybranych artystów">
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <ul class="social-media-icons">
+                        <li><a href="#"><img src="./../images/fb.svg" alt="facebook icon"></a></li>
+                        <li><a href="#"><img src="./../images/ig.svg" alt="instagram icon"></a></li>
+                        <li><a href="#"><img src="./../images/spotify.svg" alt="spotify icon"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-center">
+                    <div class="buy-ticket">
+                            <img src="./../images/buy-ticket-button.png" alt="kup bilet przycisk">
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="patrons-area">
+
+                        <div class="patron patron-1">
+                            <h4>Organizator</h4>
+                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                        </div>
+
+                        <div class="patron patron-2">
+                            <h4>Współorganizatorzy</h4>
+                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                        </div>
+
+                        <div class="patron patron-3">
+                            <h4>Partner strategiczny</h4>
+                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                        </div>
+
+                        <div class="patron patron-4">
+                            <h4>Patroni medialni</h4>
+                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                        </div>
+                    </div>
+
+                    <div class="main-patron-area">
+                        <div class="patron patron-5">
+                            <h4>Sponsor główny</h4>
+                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

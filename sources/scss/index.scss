@@ -1,9 +1,7 @@
 
+@import './sections/hero.scss';
 
-html , body {
-  font-family: 'Big Shoulders Display', cursive;
-  background: no-repeat center/cover url("../images/bgmain.jpg") ;
-}
+
 
 .main-wrapper {
 	max-width: 1920px;

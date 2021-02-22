@@ -1,3 +1,3 @@
-// import '../scss/contact.scss';
+import '../scss/contact.scss';
 
 console.log('page contact');

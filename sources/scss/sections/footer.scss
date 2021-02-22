@@ -1,11 +1,13 @@
+
 footer {
     background: no-repeat top/cover url('../images/bg-bottom.png');
     overflow: visible;
     padding: 20px 60px 0px 60px;
-    height: 90px;
+    height: $footer-height-mobile;
+    position: relative;
 
     @include lg-min {
-        height: 400px;
+        height: $footer-height-desktop;
     }
 
     .footer {
@@ -33,7 +35,9 @@ footer {
             }
 
             .buy-ticket {
-                img {cursor: pointer;}
+                img {
+                    cursor: pointer;
+                }
             }
 
         }
@@ -125,7 +129,6 @@ footer {
             padding-top: 18%;
         }
        
-
         li {
             margin: 0px 10px;
         }

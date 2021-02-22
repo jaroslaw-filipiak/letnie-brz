@@ -5,5 +5,9 @@
 @import './../global/hamburger';
 
 @import './../sections/nav.scss';
-@import './../sections/footer.scss'
+@import './../sections/footer.scss';
 
+html , body {
+    width: 100vw;
+    overflow-x: hidden;
+}

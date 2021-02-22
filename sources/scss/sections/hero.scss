@@ -1,0 +1,27 @@
+.hero-main {
+    height: $hero-main-height-mobile;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lg-min {
+        height: $hero-main-height-desktop;
+        min-height: $hero-main-height-desktop;
+        margin-top: -70px;
+        align-items: self-end;
+        }
+
+    img {
+        transform: scale(3);
+        position: relative;
+        left: 75vw;
+
+        @include lg-min {
+            position: relative;  
+            top: 10vh;
+            transform: scale(1);
+            left: 0vw;
+        }
+    }
+}

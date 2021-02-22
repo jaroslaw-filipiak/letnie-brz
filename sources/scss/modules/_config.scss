@@ -1,7 +1,16 @@
-$red: #ff0000;
-$black: #000000;
-$blue: #0000ff;
-$green: #008000;
-$white: #ffffff;
 
+// NAV
 
+$nav-height-mobile: 180px;
+$nav-height-desktop: 230px;
+
+// FOOTER
+
+$footer-height-mobile: 90px;
+$footer-height-desktop: 400px;
+
+// INDEX MAIN HERO 
+
+$hero-main-height-mobile: calc(100vh - #{$nav-height-mobile} - #{$footer-height-mobile});
+
+$hero-main-height-desktop: calc(100vh - #{$nav-height-desktop} - 5px )

@@ -1,10 +1,35 @@
 nav {
+    padding: 20px 40px;
+    height: $nav-height-mobile;
 
     @include lg-min {
         display: flex;
         align-items: center;
         justify-content:space-between;
+        height: $nav-height-desktop;
     }
+
+    .logo {
+        max-width: 260px;
+        @include lg-min {
+            max-width: 100%;
+        }
+    }
+
+    .nav-left {
+        @include lg-min {
+            width: 40%;
+        }
+    }
+
+    .nav-right {
+        z-index: 2;
+        @include lg-min {
+            width: 60%;
+        }
+    }
+
+
     .nav-right {
         
         position:absolute;
