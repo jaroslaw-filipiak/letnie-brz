@@ -5,8 +5,11 @@ html , body {
   background: no-repeat center/cover url("../images/bgmain.jpg") ;
 }
 
-
-
+.main-wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	
+}
 .wrap-content {
 	margin: 0 auto;
 	padding: 0px 20px;

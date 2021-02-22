@@ -1,0 +1,119 @@
+footer {
+    background: no-repeat top/cover url('../images/bg-bottom.png');
+    height: 400px;
+    overflow: visible;
+
+    .footer {
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            width: 30%
+        }
+
+        &-center {
+            @include lg-min {
+                display: none;
+            }
+
+        }
+
+        &-right {
+            width: 70%;
+            display: none;
+
+            @include lg-min {
+                display: flex;
+            }
+
+            .patrons-area {
+                width: 60%;
+                display: flex;
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .main-patron-area {
+                width: 40%;
+                position: relative;
+                height: 100%;
+
+                .patron-5 {
+                    position: absolute;
+                    right: 50%;
+                    top: 10%;
+                }
+            }
+
+            .patron {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                position: absolute;
+
+                &-1 {
+                    // organizator
+                    left: 0;
+                    top: 10%;
+                }
+
+                &-2 {
+
+                    // współorganizatorzy
+                    @include lg {
+                        right: 15%;
+                    }
+
+                    right: 30%;
+                    top: 10%;
+                }
+
+                &-3 {
+
+                    // partner strategiczny
+                    @include lg {
+                        left: 5%;
+                    }
+
+                    left: 20%;
+                    top: 50%;
+                }
+
+                &-4 {
+
+                    // patroni medialni
+                    @include lg {
+                        right: 5%;
+                    }
+
+                    right: 10%;
+                    top: 50%;
+                }
+            }
+        }
+
+
+    }
+
+    .social-media-icons {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 0px 10px;
+        }
+    }
+
+    .patrons-area {
+       
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
+}
