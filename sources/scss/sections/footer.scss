@@ -1,7 +1,12 @@
 footer {
     background: no-repeat top/cover url('../images/bg-bottom.png');
-    height: 400px;
     overflow: visible;
+    padding: 20px 60px 0px 60px;
+    height: 90px;
+
+    @include lg-min {
+        height: 400px;
+    }
 
     .footer {
         height: 100%;
@@ -15,12 +20,20 @@ footer {
 
         &-left {
             display: flex;
-            width: 30%
+            width: 50%;
+            @include lg-min {
+                width: 30%
+            }
         }
 
         &-center {
+            width: 50%;
             @include lg-min {
                 display: none;
+            }
+
+            .buy-ticket {
+                img {cursor: pointer;}
             }
 
         }
@@ -107,7 +120,11 @@ footer {
 
     .social-media-icons {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        @include lg-min {
+            padding-top: 18%;
+        }
+       
 
         li {
             margin: 0px 10px;
