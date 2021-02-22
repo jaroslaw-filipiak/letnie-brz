@@ -51,13 +51,17 @@ nav {
 
         .hamburger {
             position: absolute;
-            right: 10px;
+            right: 40px;
             top: 16px;
             cursor: pointer;
 
 
             @include lg-min {
                 display: none;
+            }
+            .hamburger--spin {
+                position: relative;
+                left: -20px;
             }
         } 
     }

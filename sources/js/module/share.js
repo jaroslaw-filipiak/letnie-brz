@@ -1,8 +1,10 @@
 console.log('shared between all pages / subpages')
 
 const nav = document.querySelector('.nav-right') ,
-      hamburger = document.querySelector('.hamburger')
+      hamburger = document.querySelector('.hamburger'),
+      cross = document.querySelector('.hamburger--spin')
 
       hamburger.onclick = function () {  
           nav.classList.toggle('nav-right__open');
+          cross.classList.toggle('is-active')
       };
