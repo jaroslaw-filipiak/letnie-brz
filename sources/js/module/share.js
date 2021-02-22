@@ -1,0 +1,1 @@
+console.log('shared between all pages / subpages')
