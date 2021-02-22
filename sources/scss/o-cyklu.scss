@@ -1,0 +1,54 @@
+.about {
+
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 40px;
+
+
+    @include xl-min {
+        flex-direction: row;
+        padding: 0px 60px 0px 0px;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: -10vh;
+    }
+
+    @include xxl-min {
+        padding: 0px 100px 0px 0px;
+    }
+
+    &-left {
+        @include xl-min {
+        width: 46%;
+        }
+
+        img {
+
+            position: relative; 
+            top: 3vh;
+
+            @include lg-min {
+                top: 7vh;
+            }
+
+             @include xl-min {  
+                transform: scale(1.2);
+                left: -5vw;
+                top: 38vh;
+            }
+
+            @include xxl-min {
+                transform: scale(1.1);
+                left: -5vw;
+                top: 20vh;
+            }
+        }
+    }
+
+    &-right {
+    
+        @include xl-min {
+            width: 54%;
+        }
+    }
+}

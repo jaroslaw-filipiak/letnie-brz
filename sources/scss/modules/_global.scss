@@ -11,3 +11,21 @@ html , body {
     width: 100vw;
     overflow-x: hidden;
 }
+
+.main-wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	
+}
+.wrap-content {
+	margin: 0 auto;
+	padding: 0px 20px;
+
+	@include xl-min {
+	width: 1200px;
+	}
+
+	@include xxl-min {
+		width: 1440px;
+	}
+}

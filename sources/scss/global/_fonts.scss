@@ -3,6 +3,38 @@ html , body {
     font-family: 'Big Shoulders Display', cursive;
     background: no-repeat center/cover url("../images/bgmain.jpg") ;
   }
+
+p {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 600;
+
+    @include lg-min {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    @include xl-min {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    @include xxl-min {
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;;
+}
   
 
 
@@ -48,6 +80,3 @@ $margin-heading: 0.67em 0;
     }
 }
 
-p {
-    font-size: 22px;
-}

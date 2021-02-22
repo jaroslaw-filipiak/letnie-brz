@@ -5,6 +5,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const config = [
   { site: 'index', share: 'share' },
   { site: 'about', share: 'share' },
+  { site: 'o-cyklu', share: 'share' },
   { site: 'contact' }
 ];
 
@@ -53,6 +54,10 @@ module.exports = {
     },
     about: {
       import: './sources/js/about.js',
+      dependOn: 'share'
+    },
+    'o-cyklu': {
+      import: './sources/js/o-cyklu.js',
       dependOn: 'share'
     },
     contact: {

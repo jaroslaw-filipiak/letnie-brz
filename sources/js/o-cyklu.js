@@ -1,0 +1,1 @@
+import '../scss/o-cyklu.scss'
