@@ -3,7 +3,7 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
     <meta charset="utf-8" />
@@ -24,14 +24,14 @@
     <div class="main-wrapper">
         <nav>
             <div class="nav-left">
-                <img class="logo" src="./../images/letnie-brzmienia-logotyp.svg" alt="letnie brzemienia logotyp">
+                <a href="./index.html"><img class="logo img-fluid" src="./../images/letnie-brzmienia-logotyp.svg" alt="letnie brzemienia logotyp"></a>
             </div>
             <div class="nav-right">
                 <ul id="main-menu">
-                    <li><a href="#">O cyklu</a></li>
-                    <li><a href="#">Artyści</a></li>
-                    <li><a href="#">Festiwal</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="./o-cyklu.html"><img src="./../images/buttons/o_cyklu_white.png" alt="o cyklu przycisk"></a></li>
+                    <li><a href="./artysci.html"><img src="./../images/buttons/artysci_white.png" alt="artysci przycisk"></a></li>
+                    <li><a href="./festiwal.html"><img src="./../images/buttons/festiwal_white.png" alt="festiwal przycisk"></a></li>
+                    <li><a href="./contact.html"><img src="./../images/buttons/Kontakt_white.png" alt="kontakt przycisk"></a></li>
                 </ul>
                 <div class="hamburger">
                     <div class="hamburger--spin">
@@ -41,10 +41,45 @@
             </div>
         </nav>
 
+        <section class="contact">
+            <div class="contact-left">
+                <form action="">
 
-        <section class="hero-main">
-           <img class="img-fluid" src="./../images/slider-main.png" alt="letnie brzemienia w twoim mieście , zdjecie wybranych artystów">
+                    <label for="subject">
+                        <div class="label-inner">
+                            <p>Temat</p>
+                            <img  class="img-fluid" src="./../images/label-bg-1.png" alt="label-bg">
+                        </div>
+                        
+                        <input type="text" name="subject">
+                    </label>
+
+                    <label for="textarea">
+                        <div class="label-inner">
+                            <p>Wiadomość</p>
+                            <img  class="img-fluid" src="./../images/label-bg-2.png" alt="label-bg">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+
+                    <label for="email">
+                        <div class="label-inner">
+                            <p>Twój e-mail</p>
+                            <img  class="img-fluid" src="./../images/label-bg-3.png" alt="label-bg">
+                        </div>
+                        <input type="email">
+                    </label>
+
+
+                    <input class="button-submit" type="submit" value="wyślij">
+
+                </form>
+            </div>
+            <div class="contact-right">
+                <img class="img-fluid" src="./../images/contact-bg.png" alt="zdjecie kontakt">
+            </div>
         </section>
+       
 
         <footer>
             <div class="footer">

@@ -15,6 +15,9 @@ nav {
         @include xl-min {
             max-width: 100%;
         }
+        @include xxl-min {
+            width: 540px;
+        }
     }
 
     .nav-left {

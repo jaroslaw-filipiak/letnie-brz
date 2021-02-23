@@ -29,3 +29,22 @@ html , body {
 		width: 1440px;
 	}
 }
+
+.buy-ticket-button {
+
+	margin-top: 30px;
+	display: inline-block;
+	
+	img {
+		filter: invert(0%);
+		transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		@include xxl-min {
+			width: 240px;
+		} 
+
+		&:hover {
+			filter: invert(100%);
+		}
+	}
+}

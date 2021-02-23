@@ -34,13 +34,13 @@
              @include xl-min {  
                 transform: scale(1.2);
                 left: -5vw;
-                top: 38vh;
+                top: 23vh;
             }
 
             @include xxl-min {
                 transform: scale(1.1);
                 left: -5vw;
-                top: 20vh;
+                top: 22vh;
             }
         }
     }
@@ -49,6 +49,13 @@
     
         @include xl-min {
             width: 54%;
+            margin-top: 2vh;
+        }
+
+        @include xxl-min {
+            margin-top: 8vh;
         }
     }
+
+    
 }

@@ -6,7 +6,9 @@ const config = [
   { site: 'index', share: 'share' },
   { site: 'about', share: 'share' },
   { site: 'o-cyklu', share: 'share' },
-  { site: 'contact' }
+  { site: 'artysci', share: 'share' },
+  { site: 'festiwal', share: 'share' },
+  { site: 'contact' ,share: 'share'}
 ];
 
 // configure Babel Loader
@@ -48,21 +50,36 @@ const configureOutput = () => {
 module.exports = {
   // input files
   entry: {
-    index: {
+    'index': {
       import: './sources/js/index.js',
       dependOn: 'share'
     },
-    about: {
+
+    'about': {
       import: './sources/js/about.js',
       dependOn: 'share'
     },
+
     'o-cyklu': {
       import: './sources/js/o-cyklu.js',
       dependOn: 'share'
     },
-    contact: {
-      import: './sources/js/contact.js'
+    
+    'artysci': {
+      import: './sources/js/artists.js',
+      dependOn: 'share'
     },
+
+    'festiwal': {
+      import: './sources/js/festiwal.js',
+      dependOn: 'share'
+    },
+
+    'contact': {
+      import: './sources/js/contact.js',
+      dependOn: 'share'
+    },
+
     share: './sources/js/module/share.js'
   },
   // configuration of output files
