@@ -8,7 +8,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 // common part for production and dev
 const { cssLoaders } = require('./util');
@@ -109,8 +109,8 @@ module.exports = merge(baseConfig, {
     ),
 
     // Visualization of the size of js files
-    new BundleAnalyzerPlugin({
-      openAnalyzer: true
-    }),
+    // new BundleAnalyzerPlugin({
+    //   openAnalyzer: true
+    // }),
   ]
 });
