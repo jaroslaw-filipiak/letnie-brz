@@ -5,11 +5,11 @@ import Swiper from 'swiper/bundle';
 
 
 const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
+    slidesPerView: 1,
     loop: true,
     // effect: 'coverflow',
     parallax: true,
-    spaceBetween: -150,
+    spaceBetween: 0,
     centeredSlides: true,
     navigation: {
         nextEl: '.artists-button-next',
@@ -17,14 +17,18 @@ const swiper = new Swiper('.swiper-container', {
       },
       breakpoints: {
         640: {
-          slidesPerView: 1,
-          spaceBetween: -10,
+          slidesPerView: 2,
+          spaceBetween:  5,
         },
         768: {
           slidesPerView: 2,
-          spaceBetween: -10,
+          spaceBetween: 130,
         },
         1024: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        },
+        1306: {
           slidesPerView: 3,
           spaceBetween: -150
         },
