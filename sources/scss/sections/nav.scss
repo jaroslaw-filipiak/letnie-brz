@@ -1,3 +1,11 @@
+
+$LeftWidth_XL: 33%;
+$RightWidth_XL: calc(100% - #{$LeftWidth_XL});
+
+$LeftWidth_XXL: 38%;
+$RightWidth_XXL: calc(100% - #{$LeftWidth_XXL});
+
+
 nav {
     margin-top: 30px;
     padding: 0px 40px;
@@ -22,14 +30,13 @@ nav {
 
     .nav-left {
         @include xl-min {
-            width: 35%;
+            width: $LeftWidth_XL;
         }
         @include xxl-min {
-            width: 30%;
+            width: $LeftWidth_XXL;
         }
     }
 
-  
     .nav-right {
         
         position:absolute;
@@ -46,7 +53,7 @@ nav {
         z-index: 2;
 
         @include xl-min {
-            width: 65%;
+            width: $RightWidth_XL;
             position: static;
             background-color: transparent;
             height: auto;
@@ -58,8 +65,9 @@ nav {
         }
 
         @include xxl-min {
-            width: 70%;
+            width: $RightWidth_XXL;
         }
+
 
         &__open {
             height: 100vh;
