@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 // only form HtmlWebPackPlugin
 const config = [
@@ -117,10 +118,10 @@ module.exports = {
       // OR -------------------------
 
       //creates an inline svg
-      {
-        test: /\.svg/,
-        type: 'asset/inline',
-      },
+      // {
+      //   test: /\.svg/,
+      //   type: 'asset/inline',
+      // },
 
       // OR -------------------------
 
@@ -158,6 +159,11 @@ module.exports = {
     ],
   },
   plugins: [
-    ...entryHtmlPlugins
+    ...entryHtmlPlugins ,
+    new CopyPlugin({
+      patterns: [
+        { from: "sources/images/svg", to: "/images" },
+      ],
+    }),
   ]
 };
