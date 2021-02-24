@@ -13,6 +13,11 @@ html , body {
     overflow-x: hidden;
 }
 
+// for lazy load super recipe
+img:not([src]):not([srcset]) {
+	visibility: hidden;
+  }
+
 .main-wrapper {
 	max-width: 1920px;
 	margin: 0 auto;

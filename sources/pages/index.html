@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
-
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="description - index" />
@@ -18,23 +17,25 @@
     <title>Letnie brzemienia</title>
     <link rel="manifest" href="./assets/manifest.json" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+   
 </head>
 
 <body>
     <div class="preloader">
-        <img src="./../images/letnie-brzmienia-logotyp.svg" alt="letnie brzemienia logotyp">
+        <img class="lazy" data-src="./../images/letnie-brzmienia-logotyp.svg" alt="letnie brzemienia logotyp">
     </div>
     <div class="main-wrapper">
         <nav>
             <div class="nav-left">
-                <a href="./index.html"><img class="logo img-fluid" src="./../images/letnie-brzmienia-logotyp.svg" alt="letnie brzemienia logotyp"></a>
+                <a href="./index.html"><img class="logo img-fluid lazy" data-src="./../images/letnie-brzmienia-logotyp.svg" alt="letnie brzemienia logotyp"></a>
             </div>
             <div class="nav-right">
                 <ul id="main-menu">
-                    <li><a href="./o-cyklu.html"><img src="./../images/buttons/o_cyklu_white.png" alt="o cyklu przycisk"></a></li>
-                    <li><a href="./artysci.html"><img src="./../images/buttons/artysci_white.png" alt="artysci przycisk"></a></li>
-                    <li><a href="./festiwal.html"><img src="./../images/buttons/festiwal_white.png" alt="festiwal przycisk"></a></li>
-                    <li><a href="./contact.html"><img src="./../images/buttons/Kontakt_white.png" alt="kontakt przycisk"></a></li>
+                    <li><a href="./o-cyklu.html"><img class="lazy" data-src="./../images/buttons/o_cyklu_white.png" alt="o cyklu przycisk"></a></li>
+                    <li><a href="./artysci.html"><img class="lazy" data-src="./../images/buttons/artysci_white.png" alt="artysci przycisk"></a></li>
+                    <li><a href="./festiwal.html"><img class="lazy" data-src="./../images/buttons/festiwal_white.png" alt="festiwal przycisk"></a></li>
+                    <li><a href="./contact.html"><img class="lazy" data-src="./../images/buttons/Kontakt_white.png" alt="kontakt przycisk"></a></li>
                 </ul>
                 <div class="hamburger">
                     <div class="hamburger--spin">
@@ -46,22 +47,22 @@
 
 
         <section class="hero-main">
-           <img class="img-fluid" src="./../images/slider-main.png" alt="letnie brzemienia w twoim mieście , zdjecie wybranych artystów">
+           <img class="lazy img-fluid" data-src="./../images/slider-main.png" alt="letnie brzemienia w twoim mieście , zdjecie wybranych artystów">
         </section>
 
         <footer>
             <div class="footer">
                 <div class="footer-left">
                     <ul class="social-media-icons">
-                        <li><a href="#"><img src="./../images/fb.svg" alt="facebook icon"></a></li>
-                        <li><a href="#"><img src="./../images/ig.svg" alt="instagram icon"></a></li>
-                        <li><a href="#"><img src="./../images/spotify.svg" alt="spotify icon"></a></li>
+                        <li><a href="#"><img class="lazy" data-src="./../images/fb.svg" alt="facebook icon"></a></li>
+                        <li><a href="#"><img class="lazy" data-src="./../images/ig.svg" alt="instagram icon"></a></li>
+                        <li><a href="#"><img class="lazy" data-src="./../images/spotify.svg" alt="spotify icon"></a></li>
                     </ul>
                 </div>
 
                 <div class="footer-center">
                     <div class="buy-ticket">
-                            <img src="./../images/buy-ticket-button.png" alt="kup bilet przycisk">
+                            <img class="lazy" data-src="./../images/buy-ticket-button.png" alt="kup bilet przycisk">
                     </div>
                 </div>
 
@@ -70,29 +71,29 @@
 
                         <div class="patron patron-1">
                             <h4>Organizator</h4>
-                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                            <img class="lazy" data-src="./../images/good-taste-logo.png" alt="good taste logo">
                         </div>
 
                         <div class="patron patron-2">
                             <h4>Współorganizatorzy</h4>
-                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                            <img class="lazy" data-src="./../images/good-taste-logo.png" alt="good taste logo">
                         </div>
 
                         <div class="patron patron-3">
                             <h4>Partner strategiczny</h4>
-                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                            <img class="lazy" data-src="./../images/good-taste-logo.png" alt="good taste logo">
                         </div>
 
                         <div class="patron patron-4">
                             <h4>Patroni medialni</h4>
-                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                            <img class="lazy" data-src="./../images/good-taste-logo.png" alt="good taste logo">
                         </div>
                     </div>
 
                     <div class="main-patron-area">
                         <div class="patron patron-5">
                             <h4>Sponsor główny</h4>
-                            <img src="./../images/good-taste-logo.png" alt="good taste logo">
+                            <img class="lazy" data-src="./../images/good-taste-logo.png" alt="good taste logo">
                         </div>
                     </div>
 
@@ -100,6 +101,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+
 </body>
 
 </html>

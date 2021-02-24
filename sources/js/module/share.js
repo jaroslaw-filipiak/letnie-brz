@@ -11,6 +11,13 @@ const nav = document.querySelector('.nav-right') ,
       };
 
 
+    // handle preloader
       window.addEventListener('load', () => {
         preloader.classList.add('preloader__hide')
     });
+
+    // lazyload
+
+    var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+      });
