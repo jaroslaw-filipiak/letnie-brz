@@ -9,7 +9,8 @@ const config = [
   { site: 'o-cyklu', share: 'share' },
   { site: 'artysci', share: 'share' },
   { site: 'festiwal', share: 'share' },
-  { site: 'contact' ,share: 'share'}
+  { site: 'contact' ,share: 'share'},
+  { site: '404' ,share: 'share'}
 ];
 
 // configure Babel Loader
@@ -81,6 +82,11 @@ module.exports = {
       dependOn: 'share'
     },
 
+    '404': {
+      import: './sources/js/404.js',
+      dependOn: 'share'
+    },
+
     share: './sources/js/module/share.js'
   },
   // configuration of output files
@@ -90,14 +96,14 @@ module.exports = {
 
       // Images, fonts, e.t.c: Copy files to build folder
       // https://webpack.js.org/guides/asset-modules/#resource-assets
-      // {
-      //   test: /\.svg/,
-      //   type: 'asset/resource',
-      //   generator: {
-      //     // adding a hash to the file
-      //     filename: 'images/static/[name].[hash][ext]',
-      //   },
-      // },
+      {
+        test: /\.svg/,
+        type: 'asset/resource',
+        generator: {
+          // adding a hash to the file
+          filename: 'images/static/[name].[hash][ext]',
+        },
+      },
       {
         test: /\.jpg/,
         type: 'asset/resource',
@@ -159,11 +165,6 @@ module.exports = {
     ],
   },
   plugins: [
-    ...entryHtmlPlugins ,
-    new CopyPlugin({
-      patterns: [
-        { from: "sources/images/svg", to: "/images" },
-      ],
-    }),
+    ...entryHtmlPlugins 
   ]
 };

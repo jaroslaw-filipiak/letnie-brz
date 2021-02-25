@@ -60,6 +60,7 @@
     "workbox-webpack-plugin": "^6.1.0"
   },
   "dependencies": {
+    "jquery": "^3.5.1",
     "swiper": "^6.4.15",
     "vanilla-lazyload": "^17.3.1"
   }

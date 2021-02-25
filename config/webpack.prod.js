@@ -53,7 +53,7 @@ const configureCopy = () => {
         // blocking file copying by plugin webpack will
         // do it for you and rename it with a hash
         globOptions: {
-          ignore: ['**.svg']
+          // ignore: ['**.svg']
         }
       },
     ]
