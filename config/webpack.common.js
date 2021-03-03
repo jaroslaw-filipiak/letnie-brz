@@ -43,7 +43,7 @@ const entryHtmlPlugins = config.map(({ site, share }) => {
 const configureOutput = () => {
   return {
     path: path.resolve(__dirname, '../docs'),
-    filename: 'vendor/js/[name].[fullhash].js',
+    filename: 'vendor/js/[name].js',
     // assetModuleFilename: 'images/static/[name].[hash][ext]',
     publicPath: './',
   }
@@ -101,7 +101,7 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           // adding a hash to the file
-          filename: 'images/static/[name].[hash][ext]',
+          filename: 'images/static/[name].[ext]',
         },
       },
       {
@@ -109,7 +109,7 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           // adding a hash to the file
-          filename: 'images/static/[name].[hash][ext]',
+          filename: 'images/static/[name].[ext]',
         },
       },
       {
@@ -117,7 +117,7 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           // adding a hash to the file
-          filename: 'images/static/[name].[hash][ext]',
+          filename: 'images/static/[name].[ext]',
         },
       },
 

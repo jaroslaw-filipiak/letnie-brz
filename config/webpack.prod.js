@@ -24,8 +24,8 @@ const configureOptimization = () => {
 // configure MiniCssExtract
 const configureMiniCssExtract = () => {
   return {
-    filename: 'vendor/css/[name].[fullhash].css',
-    chunkFilename: 'vendor/css/[name].[fullhash].css',
+    filename: 'vendor/css/[name].css',
+    chunkFilename: 'vendor/css/[name].css',
   }
 }
 

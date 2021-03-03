@@ -3,8 +3,9 @@ console.log('artysci page /swiper');
 import '../scss/artysci.scss'
 import Swiper from 'swiper/bundle';
 
-
-const swiper = new Swiper('.swiper-container', {
+window.addEventListener('load', () => {
+  
+  const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     loop: true,
     // effect: 'coverflow',
@@ -34,4 +35,8 @@ const swiper = new Swiper('.swiper-container', {
         },
       }
   });
+
+});
+
+
 

@@ -89,9 +89,11 @@ nav {
                 background-color: transparent;
             }
 
-            #main-menu {
+            #main-menu , #menu-menu {
                 display: flex;
+                align-items: flex-start;
             }
+
             ul {
                 opacity: 1 !important;
                 li {
@@ -132,7 +134,7 @@ nav {
     #main-menu {
         display:flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
         height: 100%;
@@ -143,7 +145,7 @@ nav {
 
         @include xl-min {
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             height: auto;
         }
@@ -216,4 +218,131 @@ nav {
        
     }
 
+}
+
+
+// for WP 
+
+ul#main-menu > li > a > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+ul#main-menu a {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 7px;
+    min-width: 230px;
+    height: 62px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item-has-children {
+
+    .sub-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            position: relative;
+          
+
+            img {
+                display: none;
+            }
+
+            a {
+                color: #fff !important;
+                display: flex !important;
+                justify-content: flex-start !important;
+                padding: 4px 0px 2px 20px !important;
+                height: auto !important;
+            }
+        }
+
+        .city-label {
+            a {
+                background-repeat: no-repeat;
+            }
+        }
+
+        .city-krakow {
+         
+             a {
+                  background-image: url(./../images/city-labels/krakow-label.png);
+                  background-size: 207px 50px;
+                  height: 50px !important;
+                  width: 207px!important
+                 
+             }
+        }
+        .city-katowice {
+         
+            a {
+                 background-image: url(./../images/city-labels/katowice-label.png);
+                 background-size: 239px 49px;
+                 height: 49px !important;
+                 width: 239px !important;
+            }
+        }
+        .city-wroclaw {
+          
+            a {
+                 background-image: url(./../images/city-labels/wroclaw-label.png);
+                 background-size: 239px 47px;
+                 height: 47px;
+            }
+        }
+        .city-lodz {
+           
+            a {
+                 background-image: url(./../images/city-labels/lodz-label.png);
+                 background-size: 143px 47px;
+                 height: 47px;
+            }
+        }
+        .city-warszawa {
+           
+            a {
+                 background-image: url(./../images/city-labels/warszawa-label.png);
+                 background-size: 261px 50px;
+                 height: 50px !important;
+                 width: 261px !important;
+            }
+        }
+        .city-poznan {
+           
+            a {
+                 background-image: url(./../images/city-labels/poznan-label.png);
+                 background-size: 191px 46px;
+                 height: 46px !important;
+                 width: 191px !important;
+            }
+        }
+        .city-szczecin {
+           
+            a {
+                 background-image: url(./../images/city-labels/szczecin-label.png);
+                 background-size: 234px 45px;
+                 height: 45px !important;
+                 width: 234px !important;
+            }
+        }
+        .city-gdansk {
+           
+            a {
+                 background-image: url(./../images/city-labels/gdansk-label.png);
+                 background-size: 221px 49px;
+                 height: 49px !important;
+                 width: 221px !important;
+            }
+        }
+    }
 }
