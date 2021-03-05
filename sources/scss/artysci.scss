@@ -250,7 +250,7 @@
         }
 
         @include xxl-min {
-          font-size: clamp(30px , 35px , 40px);
+          font-size: clamp(30px , 28px , 40px);
           letter-spacing: 6px;
         }
     }
